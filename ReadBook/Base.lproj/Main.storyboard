@@ -171,6 +171,9 @@
                     <navigationItem key="navigationItem" id="6Hd-Kx-n9P">
                         <barButtonItem key="leftBarButtonItem" systemItem="add" id="syc-4u-Bzw">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <segue destination="Sfv-RO-5tW" kind="push" id="2OS-4Y-qnT"/>
+                            </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="search" id="cJ5-5X-q8y">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -183,6 +186,44 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6hM-hm-5hk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="703" y="-1090"/>
+        </scene>
+        <!--selectCategory-->
+        <scene sceneID="4Kt-n7-54A">
+            <objects>
+                <viewController id="Sfv-RO-5tW" userLabel="selectCategory" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="AlZ-aE-VtP"/>
+                        <viewControllerLayoutGuide type="bottom" id="D8j-re-Cxv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bGx-6m-HXp">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zjk-Y7-UqK">
+                                <rect key="frame" x="0.0" y="64" width="320" height="83"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LVS-LD-cWP">
+                                        <rect key="frame" x="67" y="25" width="187" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.051688892059999998" green="0.52396058909999998" blue="0.82073709240000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="创建我的小组">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.90842363910000001" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Wuj-Ec-Bim"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bac-Gt-Wb0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="711" y="-1814"/>
         </scene>
         <!--search-->
         <scene sceneID="zqh-5s-0D9">
