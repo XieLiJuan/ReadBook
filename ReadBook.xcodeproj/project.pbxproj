@@ -33,6 +33,8 @@
 		5D6C9A741A45716000BEA3C8 /* notes.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D6C9A601A45716000BEA3C8 /* notes.png */; };
 		5D6C9A751A45716000BEA3C8 /* praise.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D6C9A611A45716000BEA3C8 /* praise.png */; };
 		5D6C9A761A45716000BEA3C8 /* setting.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D6C9A621A45716000BEA3C8 /* setting.png */; };
+		5D6C9A791A45767300BEA3C8 /* CategorySelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D6C9A781A45767300BEA3C8 /* CategorySelectViewController.m */; };
+		5D6C9A7C1A457EC100BEA3C8 /* groupListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D6C9A7B1A457EC100BEA3C8 /* groupListViewController.m */; };
 		5D780C2F1A442A710016F215 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D780C2E1A442A710016F215 /* SearchViewController.m */; };
 		5D780C311A4462B80016F215 /* userDefaultAvatar.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5D780C301A4462B80016F215 /* userDefaultAvatar.jpg */; };
 		5DA433AD1A3F2A32006FD424 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DA433AC1A3F2A32006FD424 /* Foundation.framework */; };
@@ -98,6 +100,10 @@
 		5D6C9A601A45716000BEA3C8 /* notes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = notes.png; sourceTree = "<group>"; };
 		5D6C9A611A45716000BEA3C8 /* praise.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = praise.png; sourceTree = "<group>"; };
 		5D6C9A621A45716000BEA3C8 /* setting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = setting.png; sourceTree = "<group>"; };
+		5D6C9A771A45767300BEA3C8 /* CategorySelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategorySelectViewController.h; sourceTree = "<group>"; };
+		5D6C9A781A45767300BEA3C8 /* CategorySelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategorySelectViewController.m; sourceTree = "<group>"; };
+		5D6C9A7A1A457EC100BEA3C8 /* groupListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = groupListViewController.h; sourceTree = "<group>"; };
+		5D6C9A7B1A457EC100BEA3C8 /* groupListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = groupListViewController.m; sourceTree = "<group>"; };
 		5D780C2D1A442A710016F215 /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
 		5D780C2E1A442A710016F215 /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
 		5D780C301A4462B80016F215 /* userDefaultAvatar.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = userDefaultAvatar.jpg; sourceTree = "<group>"; };
@@ -186,6 +192,10 @@
 				3F3C44871A41680B00A50CC6 /* NoteDetailViewController.m */,
 				5D780C2D1A442A710016F215 /* SearchViewController.h */,
 				5D780C2E1A442A710016F215 /* SearchViewController.m */,
+				5D6C9A771A45767300BEA3C8 /* CategorySelectViewController.h */,
+				5D6C9A781A45767300BEA3C8 /* CategorySelectViewController.m */,
+				5D6C9A7A1A457EC100BEA3C8 /* groupListViewController.h */,
+				5D6C9A7B1A457EC100BEA3C8 /* groupListViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -471,6 +481,8 @@
 				3F3C44851A41674D00A50CC6 /* IndexViewController.m in Sources */,
 				5D1517781A41D6E3002FE43E /* RBBusiness.m in Sources */,
 				5DB799DB1A3FCB3A00A29ADA /* FMDatabaseQueue.m in Sources */,
+				5D6C9A7C1A457EC100BEA3C8 /* groupListViewController.m in Sources */,
+				5D6C9A791A45767300BEA3C8 /* CategorySelectViewController.m in Sources */,
 				3F3C448B1A416C0F00A50CC6 /* NoteTableViewCell.m in Sources */,
 				5DA433B91A3F2A32006FD424 /* main.m in Sources */,
 				3F3C44881A41680B00A50CC6 /* NoteDetailViewController.m in Sources */,
