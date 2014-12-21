@@ -44,7 +44,6 @@
                     <connections>
                         <outlet property="passWord" destination="Joi-cy-HR7" id="tKq-gV-XsZ"/>
                         <outlet property="userName" destination="qmt-Dc-98q" id="Ol2-i8-rZf"/>
-                        <segue destination="TUC-nS-dsT" kind="modal" identifier="enterMain" id="x2F-Kc-9nn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -111,17 +110,10 @@
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="105"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="＃李华＃说：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KEL-1A-b1b">
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="＃李华＃说：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KEL-1A-b1b">
                                                     <rect key="frame" x="58" y="13" width="102" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="聪受到罚款的阿警方看微积分 i上课减肥开始的" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="237" translatesAutoresizingMaskIntoConstraints="NO" id="GGM-zg-9Kk">
-                                                    <rect key="frame" x="58" y="32" width="237" height="42"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="来自科学松鼠会" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o5t-CJ-KDG">
@@ -131,19 +123,15 @@
                                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="groupDefaultAvatar.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="4ul-Lj-TDh">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="groupDefaultAvatar" translatesAutoresizingMaskIntoConstraints="NO" id="4ul-Lj-TDh">
                                                     <rect key="frame" x="10" y="13" width="40" height="40"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                             </subviews>
-                                            <constraints>
-                                                <constraint firstItem="KEL-1A-b1b" firstAttribute="leading" secondItem="GGM-zg-9Kk" secondAttribute="leading" id="gUg-Au-MV0"/>
-                                            </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="groubName" destination="o5t-CJ-KDG" id="ELP-F4-gZ5"/>
                                             <outlet property="groupAvatar" destination="4ul-Lj-TDh" id="HdH-yI-x21"/>
-                                            <outlet property="message" destination="GGM-zg-9Kk" id="fNq-hI-f5W"/>
                                             <outlet property="personName" destination="KEL-1A-b1b" id="1G5-io-SJa"/>
                                         </connections>
                                     </tableViewCell>
@@ -160,13 +148,13 @@
                         <barButtonItem key="leftBarButtonItem" systemItem="add" id="syc-4u-Bzw">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
-                                <segue destination="Sfv-RO-5tW" kind="push" id="2OS-4Y-qnT"/>
+                                <segue destination="Sfv-RO-5tW" kind="push" id="W6D-WE-qmJ"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="search" id="cJ5-5X-q8y">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
-                                <segue destination="sB6-GB-RfJ" kind="modal" id="dFL-jn-lWA"/>
+                                <segue destination="sB6-GB-RfJ" kind="modal" id="cGY-j9-7xF"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -191,12 +179,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dm9-cx-BN1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="246" y="-1814"/>
+            <point key="canvasLocation" x="214" y="-1774"/>
         </scene>
-        <!--View Controller - 创建我的小组-->
+        <!--Edit View Controller - 创建我的小组-->
         <scene sceneID="QEM-rW-FJH">
             <objects>
-                <viewController id="2FE-ZG-pUh" sceneMemberID="viewController">
+                <viewController id="2FE-ZG-pUh" customClass="EditViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="JYJ-PV-Hw3"/>
                         <viewControllerLayoutGuide type="bottom" id="ir3-u5-reN"/>
@@ -205,23 +193,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zgp-gP-6iq">
-                                <rect key="frame" x="0.0" y="84" width="320" height="50"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <subviews>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="头像" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="udA-c7-U0s">
-                                        <rect key="frame" x="20" y="14" width="34" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="groupDefaultAvatar.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="BY2-oN-bDn">
-                                        <rect key="frame" x="265" y="7" width="35" height="35"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                            </view>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="头像" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="udA-c7-U0s">
+                                <rect key="frame" x="20" y="99" width="34" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="groupDefaultAvatar" translatesAutoresizingMaskIntoConstraints="NO" id="BY2-oN-bDn">
+                                <rect key="frame" x="265" y="92" width="35" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -229,12 +210,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jhj-a4-nYT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="714" y="-2494"/>
+            <point key="canvasLocation" x="711" y="-2586"/>
         </scene>
         <!--selectCategory-->
         <scene sceneID="4Kt-n7-54A">
             <objects>
-                <viewController id="Sfv-RO-5tW" userLabel="selectCategory" customClass="CategorySelectViewController" sceneMemberID="viewController">
+                <viewController hidesBottomBarWhenPushed="YES" id="Sfv-RO-5tW" userLabel="selectCategory" customClass="CategorySelectViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="AlZ-aE-VtP"/>
                         <viewControllerLayoutGuide type="bottom" id="D8j-re-Cxv"/>
@@ -279,7 +260,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bac-Gt-Wb0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="711" y="-1814"/>
+            <point key="canvasLocation" x="711" y="-1790"/>
         </scene>
         <!--search-->
         <scene sceneID="zqh-5s-0D9">
@@ -323,14 +304,14 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0Nu-K1-adJ">
-                                                    <rect key="frame" x="64" y="0.0" width="241" height="34"/>
+                                                    <rect key="frame" x="60" y="0.0" width="245" height="34"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="userDefaultAvatar.jpg" id="Oah-gB-gmb">
-                                                    <rect key="frame" x="15" y="0.0" width="34" height="34"/>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="userDefaultAvatar" id="Oah-gB-gmb">
+                                                    <rect key="frame" x="15" y="2" width="30" height="30"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </imageView>
                                             </subviews>
@@ -345,6 +326,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="vXF-Zb-QcN"/>
                     <connections>
                         <outlet property="searchBar" destination="bS8-vN-m6P" id="cCO-Mj-cYj"/>
                         <outlet property="searchTable" destination="5H6-Wh-Mks" id="DaB-56-tzZ"/>
@@ -352,7 +334,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="upW-bT-LjX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1167" y="-1814"/>
+            <point key="canvasLocation" x="1327" y="-1780"/>
         </scene>
         <!--NoteDetail-->
         <scene sceneID="pGz-x9-3Am">
@@ -432,16 +414,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MXS-2k-PPc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1571" y="-1814"/>
+            <point key="canvasLocation" x="1807" y="-1790"/>
         </scene>
-        <!--Tab Bar Controller - 主页-->
+        <!--Tab Bar Controller-->
         <scene sceneID="nbU-6F-i7y">
             <objects>
                 <tabBarController definesPresentationContext="YES" id="TUC-nS-dsT" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" title="主页" id="a2w-Oq-KZP">
-                        <barButtonItem key="leftBarButtonItem" systemItem="add" id="s2N-rT-hmk"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="9KY-Bd-Szv"/>
-                    </navigationItem>
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="HJ1-tV-McH">
                         <rect key="frame" x="129" y="330" width="163" height="49"/>
@@ -547,11 +525,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EQw-8c-tsi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="703" y="340"/>
+            <point key="canvasLocation" x="711" y="340"/>
         </scene>
     </scenes>
     <resources>
-        <image name="groupDefaultAvatar.jpg" width="360" height="360"/>
+        <image name="groupDefaultAvatar" width="30" height="30"/>
+        <image name="userDefaultAvatar" width="30" height="30"/>
         <image name="userDefaultAvatar.jpg" width="236" height="236"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

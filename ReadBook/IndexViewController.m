@@ -34,6 +34,8 @@
     TrendsEntity *bin=[[TrendsEntity alloc]init];
     self.myGroupTrends=[bin getTrendsByUserId:[AppDelegate sharedAppDelegate].userId];
     [self.navigationItem setTitle:@"主页"];
+    [self.navigationController.navigationBar setTintColor:[UIColor whiteColor]];
+    //self.automaticallyAdjustsScrollViewInsets=YES;
     //[self.navigationItem.leftBarButtonItem setTitle:@"+"];
 }
 
@@ -56,7 +58,15 @@
     UserEntity *binUser=[[UserEntity alloc]init];
     UserEntity *theUser=[binUser getUser:theTrends.userId];
     cell.personName.text=[NSString stringWithFormat:@"#%@#",theUser.userName];
-    cell.message.text=theTrends.content;
+    
+    UILabel *noteContent = [[UILabel alloc] initWithFrame:CGRectMake(64, 40, 215, 21)];
+    NSString *txt = theTrends.content;
+    noteContent.numberOfLines = 0; ///相当于不限制行数
+    noteContent.text = txt;
+    noteContent.textColor=[UIColor grayColor];
+    [noteContent sizeToFit];
+    [cell.contentView addSubview:noteContent];
+    
     GroupEntity *binGroup=[[GroupEntity alloc]init];
     GroupEntity *theGroup=[binGroup getGroup:theTrends.groupId];
     cell.groubName.text=[NSString stringWithFormat:@"来自%@",theGroup.groupName];
@@ -71,8 +81,8 @@
 {
     UIStoryboard * s=[UIStoryboard storyboardWithName:@"Main" bundle:nil];
     NoteDetailViewController *detai=[s instantiateViewControllerWithIdentifier:@"NoteDetail"];
-    //[self.navigationController pushViewController:detai animated:YES];
-    [self presentViewController:detai animated:YES completion:nil];//presentViewController:当前视图
+    [self.navigationController pushViewController:detai animated:YES];
+    //[self presentViewController:detai animated:YES completion:nil];//presentViewController:当前视图
 }
 
 -(UIStatusBarStyle)preferredStatusBarStyle

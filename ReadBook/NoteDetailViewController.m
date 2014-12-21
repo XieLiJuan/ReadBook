@@ -40,7 +40,7 @@
         UserEntity *binUser=[[UserEntity alloc]init];
         UserEntity *user=[binUser getUser:note.userId];
         self.userName.text=user.userName;
-        self.userAvatar.image=[UIImage imageNamed:@"userDefaultAvatar.jpg"];
+        self.userAvatar.image=[UIImage imageNamed:@"userDefaultAvatar.png"];
         //self.userAvatar.image=[UIImage imageNamed:(user.avatarPath!=nil?user.avatarPath:@"userDefaultAvatar.jpg")];
         
         UILabel *noteContent = [[UILabel alloc] initWithFrame:CGRectMake(20, 165, 280, 21)];
