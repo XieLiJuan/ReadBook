@@ -1,39 +1,28 @@
 //
-//  IndexViewController.m
+//  NearViewController.m
 //  ReadBook
 //
-//  Created by student on 14-12-17.
-//  Copyright (c) 2014年 student. All rights reserved.
+//  Created by 叶喽喽 on 22/12/14.
+//  Copyright (c) 2014年 叶喽喽. All rights reserved.
 //
 
-#import "IndexViewController.h"
+#import "NearViewController.h"
 #import "NoteDetailViewController.h"
-#import "NoteTableViewCell.h"
 #import "RBBusiness.h"
-#import "AppDelegate.h"
+#import "NoteTableViewCell.h"
 
-@interface IndexViewController ()
+@interface NearViewController ()
 @property NSMutableArray * myGroupTrends;
-
 @end
 
-@implementation IndexViewController
-
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
+@implementation NearViewController
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     TrendsEntity *bin=[[TrendsEntity alloc]init];
     self.myGroupTrends=[bin getTrendsByUserId:[AppDelegate sharedAppDelegate].userId];
-    [self.navigationItem setTitle:@"主页"];
+    [self.navigationItem setTitle:@"附近"];
     [self.navigationController.navigationBar setTintColor:[UIColor whiteColor]];
     //self.automaticallyAdjustsScrollViewInsets=YES;
     //[self.navigationItem.leftBarButtonItem setTitle:@"+"];
@@ -84,5 +73,12 @@
     [self.navigationController pushViewController:detai animated:YES];
     //[self presentViewController:detai animated:YES completion:nil];//presentViewController:当前视图
 }
+
+-(UIStatusBarStyle)preferredStatusBarStyle
+{
+    return UIStatusBarStyleLightContent;
+}
+
+
 
 @end

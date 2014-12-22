@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface groupListViewController : UIViewController
-
+@interface groupListViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
+@property int categoryId;
 @end

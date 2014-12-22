@@ -427,7 +427,7 @@ NSInteger const MutableArrNum=20;
     FMResultSet * resSet = [rbBin selectObj:sqlStr];
     while([resSet next]){
         CategoryEntity * res=[[CategoryEntity alloc]init];
-        res.categoryId=[resSet intForColumn:@"GroupId"];
+        res.categoryId=[resSet intForColumn:@"CategoryId"];
         res.categoryName=[resSet stringForColumn:@"CategoryName"];
         res.description=[resSet stringForColumn:@"Description"];
         res.avatarPath=[resSet stringForColumn:@"AvatarPath"];

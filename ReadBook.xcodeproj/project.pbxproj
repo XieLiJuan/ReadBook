@@ -16,6 +16,8 @@
 		5D6C9A791A45767300BEA3C8 /* CategorySelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D6C9A781A45767300BEA3C8 /* CategorySelectViewController.m */; };
 		5D6C9A7C1A457EC100BEA3C8 /* groupListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D6C9A7B1A457EC100BEA3C8 /* groupListViewController.m */; };
 		5D780C2F1A442A710016F215 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D780C2E1A442A710016F215 /* SearchViewController.m */; };
+		5DA11C9D1A48734E004067A0 /* NearViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DA11C9C1A48734E004067A0 /* NearViewController.m */; };
+		5DA11CA01A487641004067A0 /* RBNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DA11C9F1A487641004067A0 /* RBNavigationController.m */; };
 		5DA433AD1A3F2A32006FD424 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DA433AC1A3F2A32006FD424 /* Foundation.framework */; };
 		5DA433AF1A3F2A32006FD424 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DA433AE1A3F2A32006FD424 /* CoreGraphics.framework */; };
 		5DA433B11A3F2A32006FD424 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DA433B01A3F2A32006FD424 /* UIKit.framework */; };
@@ -66,6 +68,10 @@
 		5D6C9A7B1A457EC100BEA3C8 /* groupListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = groupListViewController.m; sourceTree = "<group>"; };
 		5D780C2D1A442A710016F215 /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
 		5D780C2E1A442A710016F215 /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
+		5DA11C9B1A48734E004067A0 /* NearViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NearViewController.h; sourceTree = "<group>"; };
+		5DA11C9C1A48734E004067A0 /* NearViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NearViewController.m; sourceTree = "<group>"; };
+		5DA11C9E1A487641004067A0 /* RBNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBNavigationController.h; sourceTree = "<group>"; };
+		5DA11C9F1A487641004067A0 /* RBNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBNavigationController.m; sourceTree = "<group>"; };
 		5DA433A91A3F2A32006FD424 /* ReadBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReadBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DA433AC1A3F2A32006FD424 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5DA433AE1A3F2A32006FD424 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -157,6 +163,10 @@
 				5D6C9A7B1A457EC100BEA3C8 /* groupListViewController.m */,
 				5D236E6C1A46BEB200D7D2A8 /* EditViewController.h */,
 				5D236E6D1A46BEB200D7D2A8 /* EditViewController.m */,
+				5DA11C9B1A48734E004067A0 /* NearViewController.h */,
+				5DA11C9C1A48734E004067A0 /* NearViewController.m */,
+				5DA11C9E1A487641004067A0 /* RBNavigationController.h */,
+				5DA11C9F1A487641004067A0 /* RBNavigationController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -166,13 +176,6 @@
 			children = (
 			);
 			name = Tools;
-			sourceTree = "<group>";
-		};
-		5D5375EE1A3F2B2E00C0FCC0 /* Delegates */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Delegates;
 			sourceTree = "<group>";
 		};
 		5DA433A01A3F2A32006FD424 = {
@@ -210,7 +213,6 @@
 			isa = PBXGroup;
 			children = (
 				5D1517751A41D5B9002FE43E /* Bin */,
-				5D5375EE1A3F2B2E00C0FCC0 /* Delegates */,
 				5D5375ED1A3F2B2400C0FCC0 /* Tools */,
 				5D5375EC1A3F2AE100C0FCC0 /* ViewControllers */,
 				5D5375EB1A3F2AD600C0FCC0 /* Views */,
@@ -391,6 +393,7 @@
 				5D236E6E1A46BEB200D7D2A8 /* EditViewController.m in Sources */,
 				5D1517781A41D6E3002FE43E /* RBBusiness.m in Sources */,
 				5DB799DB1A3FCB3A00A29ADA /* FMDatabaseQueue.m in Sources */,
+				5DA11C9D1A48734E004067A0 /* NearViewController.m in Sources */,
 				5D6C9A7C1A457EC100BEA3C8 /* groupListViewController.m in Sources */,
 				5D6C9A791A45767300BEA3C8 /* CategorySelectViewController.m in Sources */,
 				3F3C448B1A416C0F00A50CC6 /* NoteTableViewCell.m in Sources */,
@@ -400,6 +403,7 @@
 				5DB799D81A3FCB3A00A29ADA /* FMDatabase.m in Sources */,
 				5DB799DC1A3FCB3A00A29ADA /* FMResultSet.m in Sources */,
 				5DB799D91A3FCB3A00A29ADA /* FMDatabaseAdditions.m in Sources */,
+				5DA11CA01A487641004067A0 /* RBNavigationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

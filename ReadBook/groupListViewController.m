@@ -7,12 +7,14 @@
 //
 
 #import "groupListViewController.h"
+#import "RBBusiness.h"
 
 @interface groupListViewController ()
-
+@property NSMutableArray *groupList;
 @end
 
 @implementation groupListViewController
+@synthesize title;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -26,7 +28,22 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self setNavigateTitle:self.categoryId];
     // Do any additional setup after loading the view.
+}
+
+-(void)setNavigateTitle:(int)categoryId
+{
+    CategoryEntity *bin=[[CategoryEntity alloc]init];
+    CategoryEntity *theCate=[bin getCategory:categoryId];
+    [self.navigationItem setTitle:theCate.categoryName];
+    [self bindData:categoryId];
+}
+
+-(void)bindData:(int)categoryId
+{
+    GroupEntity *bin=[[GroupEntity alloc]init];
+    self.groupList=[bin getGroupByCategoryId:categoryId];
 }
 
 - (void)didReceiveMemoryWarning
@@ -35,15 +52,38 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    return 1;
 }
-*/
+
+//是在- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath后就跟着执行
+//-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+//{
+//    UIFont *font = [UIFont systemFontOfSize:12.0];
+//    UITableViewCell *cell=[self tableView:tableView cellForRowAtIndexPath:indexPath];
+//    NSString *tt = cell.detailTextLabel.text;
+//    CGSize size = [tt sizeWithFont:font constrainedToSize:CGSizeMake(280, 1000) lineBreakMode:UILineBreakModeWordWrap];
+//    
+//    return size.height+10; // 10即消息上下的空间，可自由调整
+//}
+
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return self.groupList.count;
+}
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell *cell=[[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"groupItemCell"];
+    GroupEntity * group=self.groupList[indexPath.row];
+    cell.textLabel.text=group.groupName;
+    cell.imageView.image=[UIImage imageNamed:group.avatarPath];
+    cell.detailTextLabel.text=group.bookReadingName;
+    cell.detailTextLabel.lineBreakMode=UILineBreakModeWordWrap;
+    [cell.detailTextLabel sizeToFit];
+    cell.detailTextLabel.numberOfLines=0;
+    return cell;
+}
 
 @end

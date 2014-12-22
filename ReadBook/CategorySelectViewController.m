@@ -48,6 +48,8 @@
 {
     UIStoryboard *m=[UIStoryboard storyboardWithName:@"Main" bundle:nil];
     groupListViewController *groupList=[m instantiateViewControllerWithIdentifier:@"groupList"];
+    CategoryEntity * theCate=self.categoryArr[indexPath.row];
+    groupList.categoryId=theCate.categoryId;
     [self.navigationController pushViewController:groupList animated:YES];
     //[self presentViewController:groupList animated:YES completion:nil];//presentViewController:当前视图
 }
@@ -76,6 +78,17 @@
     cell.imageView.layer.masksToBounds=YES;
     cell.imageView.image=[UIImage imageNamed:@"letterDefaultAvatar.png"];
     return cell;
+}
+
+//是在- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath后就跟着执行
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UIFont *font = [UIFont systemFontOfSize:12.0];
+    UITableViewCell *cell=[self tableView:tableView cellForRowAtIndexPath:indexPath];
+    NSString *tt = cell.detailTextLabel.text;
+    CGSize size = [tt sizeWithFont:font constrainedToSize:CGSizeMake(280, 1000) lineBreakMode:UILineBreakModeWordWrap];
+    
+    return size.height+10+22+10; // 10即消息上下的空间，可自由调整
 }
 
 @end

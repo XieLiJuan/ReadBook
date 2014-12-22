@@ -23,19 +23,30 @@
     return self;
 }
 
+-(void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    self.scrollView.contentSize=CGSizeMake(320, 1500);
+    self.scrollView.scrollEnabled=YES;
+    [self.scrollView setUserInteractionEnabled:YES];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    UIView *viewContainer=[self createViewContainer:-1 y:84 width:322 height:50];
-    [self.view addSubview:viewContainer];
+    self.automaticallyAdjustsScrollViewInsets=NO;
+//    UIView *viewContainer=[self createViewContainer:-1 y:84 width:322 height:50];
+//    [self.view addSubview:viewContainer];
+//    viewContainer=[self createViewContainer:-1 y:155 width:322 height:190];
+//    [self.view addSubview:viewContainer];
 }
 
 -(UIView *)createViewContainer:(int)x  y:(int)y width:(int)wid height:(int)hei
 {
     UIView *viewContainer=[[UIView alloc]initWithFrame:CGRectMake(x, y, wid, hei)];
+    viewContainer.backgroundColor=[UIColor whiteColor];
     viewContainer.layer.borderWidth=1;
-    UIColor *col=[UIColor colorWithRed:120 green:120 blue:120 alpha:.2];
+    UIColor *col=[UIColor colorWithRed:120/255.0 green:120/255.0 blue:120/255.0 alpha:0.2];
     viewContainer.layer.borderColor=col.CGColor;
     return viewContainer;
 }
