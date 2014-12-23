@@ -11,6 +11,7 @@
 #import "NoteTableViewCell.h"
 #import "RBBusiness.h"
 #import "AppDelegate.h"
+#import "GroupHomeViewController.h"
 
 @interface IndexViewController ()
 @property NSMutableArray * myGroupTrends;
@@ -80,7 +81,7 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UIStoryboard * s=[UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    NoteDetailViewController *detai=[s instantiateViewControllerWithIdentifier:@"NoteDetail"];
+    GroupHomeViewController *detai=[s instantiateViewControllerWithIdentifier:@"groupHome"];
     [self.navigationController pushViewController:detai animated:YES];
     //[self presentViewController:detai animated:YES completion:nil];//presentViewController:当前视图
 }

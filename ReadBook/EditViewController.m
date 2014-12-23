@@ -26,14 +26,15 @@
 -(void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-    self.scrollView.contentSize=CGSizeMake(320, 1500);
-    self.scrollView.scrollEnabled=YES;
-    [self.scrollView setUserInteractionEnabled:YES];
+    
+//    self.scrollView.scrollEnabled=YES;
+//    [self.scrollView setUserInteractionEnabled:YES];
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.scrollView.contentSize=CGSizeMake(280, 660);
     self.automaticallyAdjustsScrollViewInsets=NO;
 //    UIView *viewContainer=[self createViewContainer:-1 y:84 width:322 height:50];
 //    [self.view addSubview:viewContainer];

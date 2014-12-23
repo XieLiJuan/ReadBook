@@ -11,6 +11,7 @@
 		3F3C44851A41674D00A50CC6 /* IndexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3C44841A41674D00A50CC6 /* IndexViewController.m */; };
 		3F3C44881A41680B00A50CC6 /* NoteDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3C44871A41680B00A50CC6 /* NoteDetailViewController.m */; };
 		3F3C448B1A416C0F00A50CC6 /* NoteTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3C448A1A416C0F00A50CC6 /* NoteTableViewCell.m */; };
+		3FFF5C151A494C7300798168 /* GroupHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FFF5C141A494C7300798168 /* GroupHomeViewController.m */; };
 		5D1517781A41D6E3002FE43E /* RBBusiness.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D1517771A41D6E3002FE43E /* RBBusiness.m */; };
 		5D236E6E1A46BEB200D7D2A8 /* EditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D236E6D1A46BEB200D7D2A8 /* EditViewController.m */; };
 		5D6C9A791A45767300BEA3C8 /* CategorySelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D6C9A781A45767300BEA3C8 /* CategorySelectViewController.m */; };
@@ -58,6 +59,8 @@
 		3F3C44871A41680B00A50CC6 /* NoteDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteDetailViewController.m; sourceTree = "<group>"; };
 		3F3C44891A416C0F00A50CC6 /* NoteTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteTableViewCell.h; sourceTree = "<group>"; };
 		3F3C448A1A416C0F00A50CC6 /* NoteTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteTableViewCell.m; sourceTree = "<group>"; };
+		3FFF5C131A494C7300798168 /* GroupHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupHomeViewController.h; sourceTree = "<group>"; };
+		3FFF5C141A494C7300798168 /* GroupHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupHomeViewController.m; sourceTree = "<group>"; };
 		5D1517761A41D6E3002FE43E /* RBBusiness.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBBusiness.h; sourceTree = "<group>"; };
 		5D1517771A41D6E3002FE43E /* RBBusiness.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBBusiness.m; sourceTree = "<group>"; };
 		5D236E6C1A46BEB200D7D2A8 /* EditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditViewController.h; sourceTree = "<group>"; };
@@ -167,6 +170,8 @@
 				5DA11C9C1A48734E004067A0 /* NearViewController.m */,
 				5DA11C9E1A487641004067A0 /* RBNavigationController.h */,
 				5DA11C9F1A487641004067A0 /* RBNavigationController.m */,
+				3FFF5C131A494C7300798168 /* GroupHomeViewController.h */,
+				3FFF5C141A494C7300798168 /* GroupHomeViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -403,6 +408,7 @@
 				5DB799D81A3FCB3A00A29ADA /* FMDatabase.m in Sources */,
 				5DB799DC1A3FCB3A00A29ADA /* FMResultSet.m in Sources */,
 				5DB799D91A3FCB3A00A29ADA /* FMDatabaseAdditions.m in Sources */,
+				3FFF5C151A494C7300798168 /* GroupHomeViewController.m in Sources */,
 				5DA11CA01A487641004067A0 /* RBNavigationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
